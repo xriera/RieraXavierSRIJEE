@@ -23,17 +23,17 @@ public class Principal extends HttpServlet{
         response.getWriter().println("<h1>Hola mundo</h1>");
         try {
             ClienteFactura cl = new ClienteFactura();
-            cl.setCedula("0302603493");
-            cl.setNombre("wilmer");
-            cl.setNumeroCeular("093939333");
-            cl.setSaldo(1.21);
+            cl.setCedula("0104839451");
+            cl.setNombre("vinnycio");
+            cl.setNumeroCeular("0992802686");
+            cl.setSaldo(5);
 
             Factura f = new Factura();
 
             RecargaFactura recarga = new RecargaFactura();
             recarga.setClientefactura(cl);
             recarga.setFactura(f);
-            recarga.setValor(23);
+            recarga.setValor(2);
 
             f.setValor(recarga.getValor());
             
